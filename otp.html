@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="container">
+    <img src="./assets/logo2.png" alt="" />
+
+    <div>
+      <h5>Please verify phone number</h5>
+      <h6>An otp was sent to your number</h6>
+      <a href="index.html">Change phone number</a>
+    </div>
+
+    <div class="input-field col s6">
+      <div id="divOuter">
+        <div id="divInner">
+          <input id="partitioned" type="text" maxlength="4" />
+        </div>
+      </div>
+      <p>Didn't get the code? <span>Resend</span></p>
+    </div>
+
+    <input type="submit" class="send-btn" onclick="login()" value="Verify" />
+    <script src="script.js"></script>
+  </body>
+</html>
